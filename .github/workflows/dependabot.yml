@@ -12,11 +12,6 @@ updates:
       interval: weekly
   -
     package-ecosystem: npm
-    directory: /functions/template
-    schedule:
-      interval: weekly
-  -
-    package-ecosystem: npm
-    directory: functions/github-action-dispatch
+    directory: /src/gcp
     schedule:
       interval: weekly
