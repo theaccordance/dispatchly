@@ -13,7 +13,15 @@ export default function (plop) {
             type: 'add',
             path: '{{name}}/index.js',
             templateFile: 'src/gcp/index.js'
-        }]  // array of actions
+        },{
+            type: 'add',
+            path: '{{name}}/package.json',
+            templateFile: 'src/gcp/index.js'
+        },{
+            type: 'add',
+            path: '{{name}}/README.md',
+            templateFile: 'src/README.md'
+        }]
     });
 };
 

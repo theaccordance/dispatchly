@@ -9,11 +9,10 @@ The purpose of this function is to receive unauthenticated webhook events from t
 
 ```yaml
 # Github Actions Documentation: https://help.github.com/en/github/automating-your-workflow-with-github-actions
-
-# Localisation Service:  https://lokalise.com
-name: Download Lokalise Translations
+name: Download Translations from Third Party Provider
 
 on: workflow_dispatch:
+...
 ```
 
 ## Environment Variables
@@ -25,15 +24,15 @@ GITHUB_PAT
 
 GITHUB_OWNER
 : The organization or user which the dispatch event will be published to.
-: For a Github URL of `https://github.com/KazooHR/kazoo-web/` the value would be `KazooHR`
+: For a Github URL of `https://github.com/theaccordance/dispatchly/` the value would be `theaccordance`
 
 GITHUB_REPO
 : The name of the repository
-: For a Github URL of `https://github.com/KazooHR/kazoo-web/` the value would be `kazoo-web`
+: For a Github URL of `https://github.com/theaccordance/dispatchly/` the value would be `dispatchly`
 
 GITHUB_WORKFLOW_FILENAME
 : The filename of the Github Action you wish to trigger
-: For a workflow file found at `/.github/workflows/lokalise-download.yml` the value would be `lokalise-download.yml`
+: For a workflow file found at `/.github/workflows/download-translations.yml` the value would be `download-translations.yml`
 
 GITHUB_BASE_BRANCH
 : The base branch of the repo, required to trigger an action workflow
