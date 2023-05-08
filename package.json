@@ -1,0 +1,23 @@
+{
+  "name": "dispatchly",
+  "version": "2023.1.0",
+  "description": "Serverless functions that trigger Github Action workflows ",
+  "main": "bin/dispatchly.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theaccordance/dispatchly.git"
+  },
+  "keywords": [
+    "github",
+    "actions"
+  ],
+  "author": "Joe Mainwaring <joe@mainwaring.dev>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/theaccordance/dispatchly/issues"
+  },
+  "homepage": "https://github.com/theaccordance/dispatchly#readme"
+}
