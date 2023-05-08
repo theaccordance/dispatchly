@@ -2,7 +2,10 @@
   "name": "dispatchly",
   "version": "2023.1.0",
   "description": "Serverless functions that trigger Github Action workflows ",
-  "main": "bin/dispatchly.js",
+  "bin": {
+    "dispatchly": "./index.js"
+  },
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -19,5 +22,9 @@
   "bugs": {
     "url": "https://github.com/theaccordance/dispatchly/issues"
   },
-  "homepage": "https://github.com/theaccordance/dispatchly#readme"
+  "homepage": "https://github.com/theaccordance/dispatchly#readme",
+  "dependencies": {
+    "minimist": "^1.2.8",
+    "plop": "^3.1.2"
+  }
 }

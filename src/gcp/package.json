@@ -1,0 +1,11 @@
+{
+  "name": "@dispatchly/gcp",
+  "title": "Github Action Dispatch",
+  "dependencies": {
+    "@google-cloud/functions-framework": "^3.1.2",
+    "@octokit/rest": "^19.0.4"
+  },
+  "scripts": {
+    "develop": "npx functions-framework --target=main --signature-type=http"
+  }
+}
