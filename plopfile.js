@@ -23,6 +23,27 @@ export default function (plop) {
             templateFile: 'src/README.md'
         }]
     });
+    plop.setGenerator('digital-ocean', {
+        description: 'Generates a Digital Ocean Function to trigger Github Action Workflows',
+        prompts: [namePrompt], // array of inquirer prompts
+        actions: [{
+            type: 'add',
+            path: '{{name}}/index.js',
+            templateFile: 'src/digital-ocean/index.js'
+        },{
+            type: 'add',
+            path: '{{name}}/tests/function.js',
+            templateFile: 'src/digital-ocean/tests/function.js'
+        },{
+            type: 'add',
+            path: '{{name}}/package.json',
+            templateFile: 'src/digital-ocean/index.js'
+        },{
+            type: 'add',
+            path: '{{name}}/README.md',
+            templateFile: 'src/README.md'
+        }]
+    });
 };
 
 
