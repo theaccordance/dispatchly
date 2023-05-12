@@ -1,0 +1,10 @@
+# Documentation: https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions
+
+on:
+  workflow_dispatch:
+
+jobs:
+  receiver:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Workflow dispatch success."
